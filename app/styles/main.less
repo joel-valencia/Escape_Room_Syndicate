@@ -1,0 +1,144 @@
+@import '../../node_modules/platypusui/dist/platypus';
+
+body {
+    height: 100%;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#main {
+    margin-top: 70px;
+}
+
+#search {
+    background-color: #fff;
+    // float: left;
+    margin-bottom: 20px;
+}
+
+input {
+    height: 30px;
+    font-size: 20px;
+    padding: 0px;
+    border-width: 2px;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+input#address {
+    width: 200px;
+}
+
+#search button {
+    line-height: 20px;
+    width: 80px;
+    font-size: 15px;
+    border: 2px solid #555;
+    border-radius: 5px;
+    background-color: #555;
+    color: white;
+    margin-left: 5px;
+}
+
+#fb_container {
+    padding-top: 14px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.navbar-right #fb_login {
+    
+}
+
+#fb_login {
+    height: 29px;
+}
+
+#fb_user {
+    text-align: right;
+    display: none;
+}
+
+#fb_pic {
+    float: left;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+#status {
+    float: left;
+    line-height: 29px;
+    vertical-align: middle;
+}
+
+#fb_logout {
+    float: left;
+    margin-left: 10px;
+    line-height: 27px;
+    vertical-align: middle;
+    background-color: #888;
+    color: #fff;
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#map {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    clear: both;
+    position: relative;
+    padding-bottom: 55%; // crazy css aspect ratio hack
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.gm-style {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+#results {
+    .panel-heading {
+        cursor: pointer;
+        background-image: url("/images/maps_marker.png");
+        background-repeat: no-repeat;
+        background-position: 13px 11px;
+        background-size: 11px 20px;
+        
+        .panel-title {
+            padding: 0px;
+            margin-left: 20px;
+            display: inline;
+        }
+        
+        .badge {
+            float: right;
+        }
+    }
+    
+    .roomList {
+        float: left;
+    }
+
+    .roomActions {
+        float: right;
+        
+        a {
+            display: block;
+            text-align: right;
+        }
+    }
+}
+
+@import '../src/viewcontrols/home/home.vc.less';
+@import '../src/viewcontrols/locationdetail/locationdetail.vc.less';
